@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fontes/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+body {
+    background-color: #1D1D1D;
+    font-family: 'Roboto';
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.video {
+    display: block;
+    margin: auto;
+    width: 854px;
+    height: 480px;
+}
+
+.voltar {
+    display: grid;
+    justify-content: center;
+}

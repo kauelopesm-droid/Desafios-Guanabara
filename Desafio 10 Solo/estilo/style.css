@@ -1,0 +1,155 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'IDroid';
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --fonte-titulo: 'BebasNeue', Arial;
+    --fonte-padrao: Arial, sans-serif;
+    --fonte-droid: 'IDroid';
+    --cor01: #84E1AD;
+    --cor02: #3CD883;
+    --cor03: #1D5E3A;
+    --cor04: #164D2F;
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor04));
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 40px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+header p {
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+
+nav a {
+    margin-bottom: 10px;
+}
+
+nav a:hover {
+    background-color: #0e331e;
+    border-radius: 10px;
+}
+
+nav {
+    background-color: var(--cor04);
+    display: block;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+main h1 {
+    font-family: var(--fonte-droid);
+    color: #21603E;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor01), white);
+    font-family: var(--fonte-droid);
+    color: #246441;
+    padding: 5px;
+}
+
+main p{
+    font-family: var(--fonte-padrao);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-indent: 1cm;
+}
+
+main a{
+    color: black;
+    text-decoration: underline;
+}
+
+main aside h3 {
+    background-color: #2FA866;
+    font-family: var(--fonte-padrao);
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 10px;
+}
+
+main aside {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.479);
+}
+
+main aside ul {
+    padding-left: 30px;
+    columns: 2;
+}
+
+img.pequena {
+    width: 50%;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor04);
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+a{
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-decoration: none;
+}
+
+.video {
+    background-color: var(--cor04);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
